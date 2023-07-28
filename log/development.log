@@ -295,3 +295,35 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 4255)
 
 
+Started GET "/" for ::1 at 2023-07-28 17:38:56 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.slim
+  Rendering home/index.html.slim within layouts/application
+  Rendered home/index.html.slim within layouts/application (Duration: 2.7ms | Allocations: 1404)
+  Rendered layouts/_head.html.slim (Duration: 11.6ms | Allocations: 6064)
+  Rendered layouts/_alerts.html.slim (Duration: 17.2ms | Allocations: 2244)
+  Rendered layout layouts/application.html.slim (Duration: 38.4ms | Allocations: 12794)
+Completed 200 OK in 65ms (Views: 40.5ms | ActiveRecord: 8.1ms | Allocations: 17978)
+
+
+Started GET "/" for ::1 at 2023-07-28 18:33:13 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/home_layout.html.slim
+  Rendering home/index.html.slim within layouts/home_layout
+  Rendered home/index.html.slim within layouts/home_layout (Duration: 2.5ms | Allocations: 1408)
+  Rendered layout layouts/home_layout.html.slim (Duration: 6.0ms | Allocations: 3119)
+Completed 200 OK in 39ms (Views: 7.4ms | ActiveRecord: 11.3ms | Allocations: 11456)
+
+
+Started GET "/" for ::1 at 2023-07-28 18:38:09 +0100
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/home_layout.html.slim
+  Rendering home/index.html.slim within layouts/home_layout
+  Rendered home/index.html.slim within layouts/home_layout (Duration: 2.8ms | Allocations: 1403)
+  Rendered layout layouts/home_layout.html.slim (Duration: 5.6ms | Allocations: 2841)
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 5195)
+
+
