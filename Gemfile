@@ -19,6 +19,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ] # Windows does n
 gem "slim" # Replace .erb format with .slim
 gem "slim-rails"
 gem "devise" # Manage users
+gem "tailwindcss-rails" # Css framework
 
 ### Optional gems
 # Use Redis adapter to run Action Cable in production
