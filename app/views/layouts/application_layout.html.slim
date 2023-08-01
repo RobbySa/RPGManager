@@ -6,7 +6,9 @@ html.h-full.font-mons lang='en'
   body.h-full.m-0
     main.flex.flex-col.h-full
       .flex.flex-row.shadow-lg.bg-sky-300.text-white.items-center
-        .p-4.type-headline-sm RPG MANAGER
+        .p-4.type-headline-sm = link_to("RPG MANAGER", root_path)
+        .grow
+        .p-4 = link_to("Account", user_path(current_user))
 
       = render 'layouts/alerts'
       = yield
