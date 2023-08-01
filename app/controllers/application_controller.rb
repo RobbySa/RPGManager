@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::Base
-  layout 'home_layout'
+  layout 'application_layout'
 end

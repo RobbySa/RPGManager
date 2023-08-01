@@ -1,0 +1,12 @@
+doctype html
+
+html.h-full.font-mons lang='en'
+  = render 'layouts/head'
+
+  body.h-full.m-0
+    main.flex.flex-col.h-full
+      .flex.flex-row.shadow-lg.bg-sky-300.text-white.items-center
+        .p-4.type-headline-sm RPG MANAGER
+
+      = render 'layouts/alerts'
+      = yield
